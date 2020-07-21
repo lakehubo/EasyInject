@@ -1,0 +1,4 @@
+include ':easyinject'
+include ':injectutilAnnotationProcessor'
+include ':app'
+rootProject.name = "NbiccNetDemo"
