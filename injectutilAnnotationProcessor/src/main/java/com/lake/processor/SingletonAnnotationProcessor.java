@@ -2,7 +2,6 @@ package com.lake.processor;
 
 import com.lake.easyinject.Singleton;
 import com.lake.easyinject.SingletonType;
-import net.ltgt.gradle.incap.IncrementalAnnotationProcessor;
 import java.io.BufferedWriter;
 import java.io.IOException;
 import java.util.Set;
@@ -17,10 +16,7 @@ import javax.lang.model.element.TypeElement;
 import javax.tools.Diagnostic;
 import javax.tools.JavaFileObject;
 
-import static net.ltgt.gradle.incap.IncrementalAnnotationProcessorType.AGGREGATING;
-
 @SupportedAnnotationTypes("com.lake.easyinject.Singleton")
-@IncrementalAnnotationProcessor(AGGREGATING)
 public class SingletonAnnotationProcessor extends AbstractProcessor {
     private static final String IMPL_SUFFIX = "_Single";
 

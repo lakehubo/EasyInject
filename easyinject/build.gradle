@@ -8,12 +8,13 @@ dependencies {
     compileOnly 'com.google.android:android-test:4.1.1.4'
     compileOnly 'com.google.android:annotations:4.1.1.4'
     compileOnly 'com.google.android:support-v4:r7'
+    compileOnly "androidx.annotation:annotation:1.1.0"
 }
 
 sourceSets {
     main {
         java {
-            srcDir 'src'
+            srcDir 'src/java'
         }
         resources {
             srcDir 'res'
@@ -21,8 +22,8 @@ sourceSets {
     }
 }
 
-sourceCompatibility = "1.7"
-targetCompatibility = "1.7"
+sourceCompatibility = JavaVersion.VERSION_1_8
+targetCompatibility = JavaVersion.VERSION_1_8
 
 def siteUrl = 'https://github.com/lakehubo/EasyInject' // 项目的主页
 def gitUrl = 'https://github.com/lakehubo/EasyInject.git' // Git仓库的url

@@ -1,4 +1,4 @@
 include ':easyinject'
 include ':injectutilAnnotationProcessor'
 include ':app'
-rootProject.name = "NbiccNetDemo"
+rootProject.name = "EasyInject"

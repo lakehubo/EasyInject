@@ -10,13 +10,13 @@ dependencies {
     annotationProcessor "net.ltgt.gradle.incap:incap-processor:$incap"
 }
 
-sourceCompatibility = "1.7"
-targetCompatibility = "1.7"
+sourceCompatibility = JavaVersion.VERSION_1_8
+targetCompatibility = JavaVersion.VERSION_1_8
 
 sourceSets {
     main {
         java {
-            srcDir 'src'
+            srcDir 'src/java'
         }
         resources {
             srcDir 'res'
